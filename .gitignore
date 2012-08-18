@@ -1,0 +1,8 @@
+#docdoc gitignore
+
+src/
+docs/
+log/
+assets/docs/
+app/templates/doccoOutput/
+server/modules/config.js

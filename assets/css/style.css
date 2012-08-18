@@ -1,0 +1,35 @@
+.content {
+	margin-top: 60px;
+}
+
+.content .span3 {
+	width: 21%;
+}
+
+.doccoNav {
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	bottom: 0;
+	margin-bottom: 0;
+	overflow: scroll;
+}
+
+.doccoNav a {
+	cursor: pointer;
+}
+
+.fileContent thead {
+	display: none;
+}
+
+.pilcrow {
+	display: none;
+}
+
+#container {
+	position: absolute;
+	top: 126px;
+	bottom: 0;
+	overflow: scroll;
+}
