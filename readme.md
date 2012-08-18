@@ -1,36 +1,18 @@
-![Boilerplate](https://github.com/tbranyen/backbone-boilerplate/raw/assets/header.png)
-
-Backbone Boilerplate
+DocDoc
 ====================
 
-This boilerplate is the product of much research and frustration.  Existing
-boilerplates freely modify Backbone core, lack a build process, and are very
-prescriptive; Backbone Boilerplate changes that.
+This is a handy viewer for the javascript in your project using [docco](https://github.com/jashkenas/docco) to prepare the source for viewing. Project is built using [backbone boilerplate](https://github.com/tbranyen/backbone-boilerplate/).
 
-Organize your application in a logical filesystem, develop your
-Models/Collections/Views/Routers inside modules, and build knowing you have
-efficient code that will not bottleneck your users.
+This is very much a work and progress, not production ready. 
 
-Thanks to our
-[Contributors](https://github.com/tbranyen/backbone-boilerplate/contributors)!
+## Configuration ##
 
-Special Thanks to: [cowboy](http://github.com/cowboy),
-[iros](http://github.com/iros), [nimbupani](http://github.com/nimbupani),
-[wookiehangover](http://github.com/wookiehangover), and
-[jugglinmike](http://github.com/jugglinmike) for helping me create this project.
+Add a file called `config.js` to `/server/modules` that looks like this:
 
-Extra Special Thanks to: [Paul Guinan](http://bigredhair.com/work/paul.html)
-for giving me usage rights to his fantastic Boilerplate character.
-
-## Documentation ##
-
-View the Backbone Boilerplate documentation here:
-
-[GitHub Wiki](https://github.com/tbranyen/backbone-boilerplate/wiki)
-
-## Build process ##
-
-To use the new and improved build process, please visit the 
-[grunt-bbb](https://github.com/backbone-boilerplate/grunt-bbb)
-plugin repo and follow the instructions to install.  Basing your project off
-this repo will allow the `bbb` commands to work out-of-the-box.
+```javascript
+this.hgUrl = '[url of hg repo]';
+this.localRepoPath = '[local repo root]';
+this.modulePath = '[path from project root to modules root]';
+this.stagingPath = '[staging directory to keep repo clean from renaming, etc.]';
+this.basePath = '[root from os default to project]';
+```
